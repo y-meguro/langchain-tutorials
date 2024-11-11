@@ -1,15 +1,13 @@
 [tool.poetry]
-name = "langchain-simple-llm-python"
+name = "langchain-tutorials"
 version = "0.1.0"
-description = ""
-authors = ["Yohei <y.meguro.2008@gmail.com>"]
-readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "3.12.7"
-langchain-openai = "^0.2.6"
-langchain = "^0.3.7"
 python-dotenv = "^1.0.1"
+langchain = "^0.3.7"
+langchain-openai = "^0.2.6"
 langserve = {extras = ["all"], version = "^0.3.0"}
 
 [build-system]
