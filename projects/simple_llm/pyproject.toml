@@ -1,0 +1,8 @@
+[tool.poetry]
+name = "simple-llm"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+langchain = "^0.3.7"
+langchain-openai = "^0.2.6"
+langserve = {extras = ["all"], version = "^0.3.0"}
