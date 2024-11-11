@@ -7,10 +7,9 @@ from langserve import add_routes
 
 # 1. Create prompt template
 system_template = "Translate the following into {language}:"
-prompt_template = ChatPromptTemplate.from_messages([
-    ('system', system_template),
-    ('user', '{text}')
-])
+prompt_template = ChatPromptTemplate.from_messages(
+    [("system", system_template), ("user", "{text}")]
+)
 
 # 2. Create model
 model = ChatOpenAI()
@@ -23,9 +22,9 @@ chain = prompt_template | model | parser
 
 # 5. App definition
 app = FastAPI(
-  title="LangChain Server",
-  version="1.0",
-  description="A simple API server using LangChain's Runnable interfaces",
+    title="LangChain Server",
+    version="1.0",
+    description="A simple API server using LangChain's Runnable interfaces",
 )
 
 # 6. Adding chain route

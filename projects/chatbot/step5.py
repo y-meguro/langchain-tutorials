@@ -1,6 +1,12 @@
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage, trim_messages
+from langchain_core.messages import (
+    AIMessage,
+    BaseMessage,
+    HumanMessage,
+    SystemMessage,
+    trim_messages,
+)
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph.message import add_messages
@@ -52,7 +58,9 @@ class State(TypedDict):
     messages: Annotated[Sequence[BaseMessage], add_messages]
     language: str
 
+
 workflow = StateGraph(state_schema=State)
+
 
 def call_model(state: State):
     chain = prompt | model

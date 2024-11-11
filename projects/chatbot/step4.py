@@ -22,9 +22,11 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
+
 class State(TypedDict):
     messages: Annotated[Sequence[BaseMessage], add_messages]
     language: str
+
 
 workflow = StateGraph(state_schema=MessagesState)
 

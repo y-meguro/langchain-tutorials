@@ -11,10 +11,12 @@ model = ChatOpenAI(model="gpt-3.5-turbo")
 # Define a new graph
 workflow = StateGraph(state_schema=MessagesState)
 
+
 # Define the function that calls the model
 def call_model(state: MessagesState):
     response = model.invoke(state["messages"])
     return {"messages": response}
+
 
 # Define the (single) node in the graph
 workflow.add_edge(START, "model")

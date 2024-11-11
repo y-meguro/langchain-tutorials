@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
 from langchain_core.messages import AIMessage, HumanMessage
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
 
