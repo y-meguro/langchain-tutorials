@@ -8,9 +8,6 @@ from langchain_core.prompts import ChatPromptTemplate
 
 load_dotenv()
 
-print(os.getenv('LANGCHAIN_PROJECT'))
-print(os.getenv('LANGCHAIN_ENDPOINT'))
-
 parser = StrOutputParser()
 
 model = ChatOpenAI(model="gpt-4")
