@@ -15,8 +15,23 @@
 poetry config virtualenvs.in-project true
 ```
 
-## 実行例
+## コマンド
+
+- ファイルの実行
 
 ```
 poetry run python projects/simple_llm/main.py
+```
+
+- lint
+
+```
+poetry run ruff check
+poetry run ruff check --fix
+```
+
+- format
+
+```
+poetry run ruff format
 ```
