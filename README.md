@@ -5,7 +5,8 @@
 
 ## パッケージ管理
 
-[Poetry](https://python-poetry.org/) を利用
+- [Poetry](https://python-poetry.org/) を利用
+- pythonのバージョン管理は [asdf](https://asdf-vm.com/) を利用
 
 ## 設定
 
@@ -37,6 +38,12 @@ settings.jsonに以下を追加
 
 ```
 poetry run python projects/simple_llm/main.py
+```
+
+- ライブラリの追加
+
+```
+poetry add {パッケージ名}
 ```
 
 - lint
