@@ -2,6 +2,7 @@
 
 - [Tutorials | 🦜️🔗 LangChain](https://python.langchain.com/docs/tutorials/) のコード
 - [LangSmith](https://www.langchain.com/langsmith) を利用
+- モノレポの構成は [Poetryを使ったPythonのモノレポ構成](https://zenn.dev/tellernovel_inc/articles/27e21b8cca94c8) を参考にした（もっとよくできるかもしれない）
 
 ## パッケージ管理
 
@@ -43,7 +44,7 @@ poetry run python projects/simple_llm/main.py
 - ライブラリの追加
 
 ```
-poetry add {パッケージ名}
+poetry add {パッケージ名} --group {プロジェクト名}
 ```
 
 - lint
