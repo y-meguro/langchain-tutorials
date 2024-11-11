@@ -10,6 +10,7 @@ python = "3.12.7"
 langchain-openai = "^0.2.6"
 langchain = "^0.3.7"
 python-dotenv = "^1.0.1"
+langserve = {extras = ["all"], version = "^0.3.0"}
 
 [build-system]
 requires = ["poetry-core"]
