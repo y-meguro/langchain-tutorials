@@ -1,4 +1,4 @@
-# LanChain チュートリアル
+# LangChain チュートリアル
 
 - [Tutorials | 🦜️🔗 LangChain](https://python.langchain.com/docs/tutorials/) のコード
 - [LangSmith](https://www.langchain.com/langsmith) を利用
